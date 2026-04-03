@@ -1,0 +1,587 @@
+@import url('commons.css');
+
+.logo img {
+    width: 60px;
+    height: 50px;
+}
+
+.header_wrap {
+    height: 80px;
+    background-color: #F2F4F6;
+}
+
+.nav {
+    width: 1088px;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+}
+
+.logo-tit {
+    margin-left: 7px;
+    font-family: 'Pretendard';
+    font-size: 36px;
+    color: #161616;
+    font-weight: 700;
+
+}
+
+.navi {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2570C5;
+    list-style: none;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.kv-section {
+    height: 700px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    /* 수직 중앙 정렬 */
+}
+
+.kv-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: -2px;
+    gap: 10px;
+}
+
+.kv-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Pretendard';
+    line-height: 30px;
+}
+
+.cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    gap: 40px;
+    color: #fff;
+    background-color: #5b92d2;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.cta:hover {
+    transform: scale(1.1);
+    background-color: #2570C5;
+}
+
+.class-visual {
+    position: relative;
+}
+
+.main-img {
+    width: 522px;
+    height: 522px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-card-1,
+.info-card-2 {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 15px;
+    box-shadow: 2px 4px 10.6px rgba(0, 0, 0, 0.15)
+}
+
+.card-top {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #4b4b4b;
+}
+
+.card-bottom {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #161616;
+    letter-spacing: -2px;
+}
+
+.info-card-1 {
+    top: 20px;
+    left: -70px;
+}
+
+.info-card-1 .card-top img {
+    width: 28px;
+    height: 28px;
+}
+
+.info-card-2 {
+    bottom: 20px;
+    right: -70px;
+}
+
+.info-card-2 .card-top img {
+    width: 28px;
+    height: 28px;
+}
+
+/* --------------------kv 끝------- */
+.check-section {
+    background-color: #F2F4F6;
+}
+
+.container {
+    width: 1088px;
+    margin: 0 auto;
+}
+
+.check-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check-title img {
+    margin-bottom: 30px;
+}
+
+.check-title h2 {
+    margin-bottom: 15px;
+}
+
+.check-title p {
+    margin-bottom: 40px;
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-item p {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-right: 8px;
+}
+
+.list-item {
+    width: 600px;
+    height: 74px;
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #161616;
+}
+
+.list-1 {
+    margin-right: auto;
+}
+
+.list-2 {
+    margin-left: 40%;
+}
+
+.list-3 {
+    margin-left: -30%;
+}
+
+.list-4 {
+    margin-left: auto;
+}
+
+.list-5 {
+    margin-left: 10%;
+}
+
+.list-6 {
+    margin-left: -20%;
+}
+
+.dots {
+    margin: 15px 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------체크리스트 끝-------- */
+
+.snore-sub-title {
+    color: #fff;
+    background-color: #5b92d2;
+    border-radius: 50px;
+    width: 510px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.snore-top-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.snore-bottom-text {
+    margin-top: 40px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.snore-process img {
+    width: 238px;
+    height: 238px;
+}
+
+.snore-process {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.process1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.process1 p {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #5B92D2;
+}
+
+.arrow-wrap {
+    width: 20px;
+    height: 13px;
+}
+
+/* -----------3 코골이 위험 끝------------ */
+.inspection-section {
+    background-color: #F2F4F6;
+}
+
+.inspection-tit {
+    margin-bottom: 36px;
+}
+
+.inspection-text,
+.inspection-text2 p {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.5;
+}
+
+.inspection-text {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.inspection-text2 {
+    text-align: center;
+}
+
+/* -----------4 검사설명 끝----------- */
+.process-section {
+    background: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 100%);
+}
+
+.process-tit {
+    margin-bottom: 106px;
+    display: flex;
+    justify-content: center;
+}
+
+.pro-top-text {
+    margin: 30px 0;
+}
+
+.pro-pics {
+    width: 520px;
+    height: 382px;
+}
+
+.pro-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-bottom-text p {
+    letter-spacing: 0px;
+}
+
+.process-2box {
+    display: flex;
+    column-gap: 50px;
+}
+
+.process-4box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 106px;
+}
+.pro-top-text{
+    display: flex;
+    gap: 8px;
+}
+
+/* -------------5 검사 과정 끝--------- */
+.checkbefore-section {
+    background-color: #F2F4F6;
+}
+
+.checkbpic {
+    display: flex;
+    justify-content: center;
+    gap: 43px;
+}
+
+.checkb-tit {
+    margin: 106px 0;
+}
+
+.checkb-bottom-text {
+    text-align: center;
+    margin-top: 160px;
+}
+
+/* ------------6검사전 준비사항 끝--------- */
+.trust-section {
+    background-color: #5b92d2;
+}
+
+.logo-text img {
+    width: 59px;
+    height: 44px;
+}
+
+.logo-text h2 {
+    color: #fff;
+}
+
+.logo-text {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+.trust-top-tit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trust-top-tit p {
+    text-align: right;
+    color: #fff;
+}
+
+.trust-main-text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.trust-sub-text {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.trust-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 144px;
+    background-color: #2570C5;
+    border-radius: 15px;
+    padding: 21px 19px;
+    width: 340px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    overflow: visible;
+}
+.trust-box-icon{
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+}
+.trust-3box {
+    display: flex;
+    gap: 34px;
+}
+/* --------------검사신뢰 trsut 끝-----------  */
+.review-section{
+    background-color: #F2F4F6;
+}
+.review-top-tit{
+    margin-bottom: 106px;
+}
+.review-card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 737px;
+    height: auto;
+    padding: 35px 36px;
+    background-color: #fff;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 25px;
+    position: relative;
+}
+.re-right{
+    align-self: flex-end;
+}
+.card-4{
+    display: flex;
+    flex-direction: column;
+}
+.review-bottom{
+    display: flex;
+    align-items: center;
+}
+.review-info{
+    display: flex;
+    gap: 11px;
+}
+.review-card-tit{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -1px;
+}
+.review-top-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 21px;
+}
+.card-name{
+    font-size: 20px;
+}
+.card-age{
+    font-size: 16px;
+}
+.review-name{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.review-star{
+    margin-left: auto;
+}
+.review-card:nth-child(1n){
+    margin-top: -10px;
+}
+.review-card:nth-child(1) {z-index: 4;}
+.review-card:nth-child(2) {z-index: 3;}
+.review-card:nth-child(3) {z-index: 2;}
+.review-card:nth-child(4) {z-index: 1;}
+/* ------------ 리뷰 끝------------- */
+.price-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-main-tit p{
+    font-size: 16px;
+    color: #161616;
+}
+.price-main-tit h3{
+    color:#2570C5;
+}
+.price-main-tit{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.price-main-box{
+    background-color: #ffffff;
+    padding: 26px 34px;
+    border-radius: 21px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.price-box-top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price-dis{
+    gap: 7px;
+    display: flex;
+}
+.price-dis h3{
+    font-size: 36px;
+    font-weight: 900;
+}
+.price-info{
+    font-size: 16px;
+}
+.price-con{
+    font-size: 24px;
+    line-height: 1.8;
+    letter-spacing: -2px;
+    font-weight: 500;
+}
+.price-list{
+    list-style: none;
+    padding-left: 0;
+}
+.price-list li{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.price-list li::before{
+    content: "•";
+    font-size: 24px;
+    color: #161616;
+}
