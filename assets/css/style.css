@@ -8,6 +8,11 @@
 .header_wrap {
     height: 80px;
     background-color: #F2F4F6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .nav {
@@ -42,6 +47,7 @@
 }
 
 .kv-section {
+    margin-top: 80px;
     height: 700px;
     background-color: #fff;
     display: flex;
@@ -112,6 +118,40 @@
     box-shadow: 2px 4px 10.6px rgba(0, 0, 0, 0.15)
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.info-card-1 {
+    animation: fadeUp 0.8s ease-out forwards, float 3s ease-in-out 0.8s infinite;
+}
+
+.info-card-2 {
+    animation: fadeUp 0.8s ease-out 0.3s forwards, float 3s ease-in-out 1.1s infinite;
+}
+
 .card-top {
     display: flex;
     gap: 10px;
@@ -179,6 +219,28 @@
 
 .check-title p {
     margin-bottom: 40px;
+}
+
+.check-bottom-text {
+    text-align: center;
+}
+
+.check-highlight {
+    display: inline-block;
+    position: relative;
+    color: #2570C5;
+    z-index: 1;
+}
+
+.check-highlight::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    background-color: #CCDCEE;
+    z-index: -1;
 }
 
 .lists {
@@ -358,7 +420,8 @@
     flex-direction: column;
     row-gap: 106px;
 }
-.pro-top-text{
+
+.pro-top-text {
     display: flex;
     gap: 8px;
 }
@@ -381,6 +444,24 @@
 .checkb-bottom-text {
     text-align: center;
     margin-top: 160px;
+}
+
+.checkb-highlight {
+    display: inline-block;
+    position: relative;
+    color: #2570C5;
+    z-index: 1;
+}
+
+.checkb-highlight::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    background-color: #CCDCEE;
+    z-index: -1;
 }
 
 /* ------------6검사전 준비사항 끝--------- */
@@ -445,25 +526,30 @@
     position: relative;
     overflow: visible;
 }
-.trust-box-icon{
+
+.trust-box-icon {
     width: 145px;
     height: 145px;
     position: absolute;
     top: -40%;
     left: 50%;
 }
+
 .trust-3box {
     display: flex;
     gap: 34px;
 }
+
 /* --------------검사신뢰 trsut 끝-----------  */
-.review-section{
+.review-section {
     background-color: #F2F4F6;
 }
-.review-top-tit{
+
+.review-top-tit {
     margin-bottom: 106px;
 }
-.review-card{
+
+.review-card {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -475,72 +561,105 @@
     border-radius: 25px;
     position: relative;
 }
-.re-right{
+
+.re-right {
     align-self: flex-end;
 }
-.card-4{
+
+.card-4 {
     display: flex;
     flex-direction: column;
 }
-.review-bottom{
+
+.review-bottom {
     display: flex;
     align-items: center;
 }
-.review-info{
+
+.review-info {
     display: flex;
     gap: 11px;
 }
-.review-card-tit{
+
+.review-card-tit {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.4;
     letter-spacing: -1px;
 }
-.review-top-text{
+
+.review-top-text {
     display: flex;
     flex-direction: column;
     row-gap: 21px;
 }
-.card-name{
+
+.card-name {
     font-size: 20px;
 }
-.card-age{
+
+.card-age {
     font-size: 16px;
 }
-.review-name{
+
+.review-name {
     display: flex;
     flex-direction: column;
     gap: 11px;
 }
-.review-star{
+
+.review-star {
     margin-left: auto;
 }
-.review-card:nth-child(1n){
+
+.review-card:nth-child(1n) {
     margin-top: -10px;
 }
-.review-card:nth-child(1) {z-index: 4;}
-.review-card:nth-child(2) {z-index: 3;}
-.review-card:nth-child(3) {z-index: 2;}
-.review-card:nth-child(4) {z-index: 1;}
+
+.review-card:nth-child(1) {
+    z-index: 4;
+}
+
+.review-card:nth-child(2) {
+    z-index: 3;
+}
+
+.review-card:nth-child(3) {
+    z-index: 2;
+}
+
+.review-card:nth-child(4) {
+    z-index: 1;
+}
+
 /* ------------ 리뷰 끝------------- */
-.price-all{
+.price-all {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.price-main-tit p{
+
+.price-section {
+    background: linear-gradient(to bottom, #ffffff 0, #EFEFEF 100%);
+}
+
+.price-main-tit p {
     font-size: 16px;
     color: #161616;
 }
-.price-main-tit h3{
-    color:#2570C5;
+
+.price-main-tit h3 {
+    color: #2570C5;
+    line-height: 1.2;
 }
-.price-main-tit{
+
+.price-main-tit {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.price-main-box{
+
+.price-main-box {
     background-color: #ffffff;
     padding: 26px 34px;
     border-radius: 21px;
@@ -549,39 +668,230 @@
     display: flex;
     flex-direction: column;
 }
-.price-box-top{
+
+.price-box-top {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.price-dis{
+
+.price-dis {
     gap: 7px;
     display: flex;
 }
-.price-dis h3{
+
+.price-dis h3 {
     font-size: 36px;
     font-weight: 900;
 }
-.price-info{
+
+.price-info {
     font-size: 16px;
 }
-.price-con{
+
+.price-con {
     font-size: 24px;
     line-height: 1.8;
     letter-spacing: -2px;
     font-weight: 500;
 }
-.price-list{
+
+.price-list {
     list-style: none;
     padding-left: 0;
 }
-.price-list li{
+
+.price-list li {
     display: flex;
     align-items: flex-start;
     gap: 8px;
 }
-.price-list li::before{
+
+.price-list li::before {
     content: "•";
     font-size: 24px;
     color: #161616;
+}
+
+/* -------------가격 끝---------- */
+.recta-section {
+    background-color: #161616;
+}
+
+.recta-all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recta-main-tit {
+    justify-content: center;
+}
+
+.recta-main-tit {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recta-main-tit h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.recta-main-tit p {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.third-body::before {
+    content: "";
+    display: inline-block;
+
+    /* 크기가 너무 작으면 안 보일 수 있으니 넉넉히 잡습니다 */
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+
+    /* 경로 앞에 /를 붙이거나 ../를 붙여가며 테스트해보세요 */
+    background-image: url('../images/check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    vertical-align: middle;
+}
+
+.cta-btn {
+    width: 378px;
+    height: 234px;
+}
+
+.cta-form-row {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.cta-form-row input {
+    padding: 14px 10px;
+    border-radius: 7px;
+    color: #B9B9B9;
+    width: 100%;
+}
+
+.cta-name {
+    flex: 3;
+}
+
+.cta-form-row input:last-child {
+    flex: 7;
+}
+
+.cta-con {
+    padding: 14px 10px;
+    border-radius: 7px;
+    color: #B9B9B9;
+    /* width: 100%; */
+}
+
+.cta-white {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cta-check label,
+.cta-blue p {
+    color: #D7D7D7;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.cta-form-btn {
+    width: 100%;
+    background-color: #2570C5;
+    border-radius: 7px;
+    padding: 16px 50px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cta-blue {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+/* ----------------예약 cta 끝-------------- */
+.footer-seciton {
+    background-color: #F2F4F6;
+}
+
+.footer-icon {
+    display: flex;
+    width: 46px;
+    height: 46px;
+    gap: 12px;
+}
+
+.footer-all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-left h3,
+.footer-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.footer-left p,
+.footer-add {
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer-left-text,
+.footer-info,
+.footer-add {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-all {
+    padding: 50px 0;
+}
+
+.footer-bottom,
+.personal {
+    display: flex;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 30px 0 50px;
+}
+
+.personal {
+    gap: 48px;
+
+}
+
+.bold {
+    font-weight: 600;
+    color: #1F2C45;
 }
