@@ -76,7 +76,7 @@ body{
 }
 
 .section-pd {
-  padding: 62px 0;
+  padding: 106px 0;
 }
 .sub-font{
     font-family: 'JoyFulStory';
@@ -87,13 +87,13 @@ body{
 }
 .main-title{
     font-family: 'Pretendard';
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 800;
     letter-spacing: 0px;
 }
 .sub-title{
     font-family: 'Pretendard';
-    font-size: 3.25rem;
+    font-size:3.25rem;
     font-weight: 700;
     letter-spacing: -1px;
     line-height: 1.5;

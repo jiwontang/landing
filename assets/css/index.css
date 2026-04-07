@@ -330,6 +330,10 @@ body {
 }
 
 @media(max-width:768px) {
+    .section-pd {
+        padding: 62px 0;
+    }
+
     .container {
         padding: 0 16px;
     }
@@ -344,12 +348,12 @@ body {
         height: 60px;
     }
 
-    .kv-section {
+    /* .kv-section {
         margin-top: 60px;
         padding: 40px 0;
         min-height: auto;
         align-items: flex-start;
-    }
+    } */
 
     .kv-main {
         flex-direction: column-reverse;
@@ -427,7 +431,7 @@ body {
 
     /* ---------------kv 미디어쿼리 끝------------ */
     .list-item {
-        width: 70%;
+        width: 90%;
         height: auto;
         margin: 0 auto;
         padding: 13px 0;
@@ -449,12 +453,12 @@ body {
     }
 
     .check-title p {
-        font-size: 0.8rem;
+        font-size: 0.87rem;
         letter-spacing: -.5px;
     }
 
     .list-item p {
-        font-size: 0.8rem;
+        font-size: 0.87rem;
         font-weight: 500;
         margin-right: 4px;
         letter-spacing: 0px;
