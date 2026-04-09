@@ -1,4 +1,6 @@
-@import url('indexcommons.css');
+@import url('commons.css');
+
+
 
 body {
     overflow-x: hidden;
@@ -26,6 +28,41 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 4px 0;
+    background: #2570C5;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 .nav {
@@ -74,7 +111,7 @@ body {
     flex-direction: column;
     justify-content: center;
     letter-spacing: -2px;
-    gap: 10px;
+    gap: 3px;
 }
 
 .kv-main {
@@ -239,6 +276,10 @@ body {
     text-align: center;
 }
 
+.check-bottom-text h2 {
+    letter-spacing: -.3px;
+}
+
 .check-highlight {
     display: inline-block;
     position: relative;
@@ -316,10 +357,120 @@ body {
     justify-content: center;
 }
 
-/* ------------------------------미디어쿼리 --------------- */
-@media screen and (max-width: 1200px) {
+/* ----------체크리스트 끝-------- */
+.snore-sub-title {
+    color: #fff;
+    background-color: #5b92d2;
+    border-radius: 50px;
+    width: 50%;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.snore-top-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.snore-bottom-text {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.snore-bottom-text p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.snore-process img {
+    width: 100%;
+    height: auto;
+}
+
+.snore-process {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.process1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    flex: 1;
+    max-width: 238px;
+}
+
+.img-box {
+    position: relative;
+    width: 100%;
+}
+
+.img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.process1 p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #5B92D2;
+}
+
+.arrow-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30px;
+    z-index: 10;
+    width: 100%;
+    max-width: 20px;
+    height: auto;
+}
+
+.arrow-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* --- [style.css] 미디어 쿼리 위쪽에 붙여넣기 (PC 기본 설정) --- */
+
+.snoreSwiper {
+    width: 100%;
+    max-width: 1088px;
+    margin: 0 auto;
+    overflow: visible;
+    /* PC에선 그림자나 이미지가 잘리지 않게 다 보여줌 */
+}
+
+/* PC에서는 4개가 나란히 배치되도록 설정 */
+.snoreSwiper .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    /* 화살표가 들어갈 넉넉한 간격 */
+}
+
+/* PC에서는 Swiper가 만들어내는 좌우 화살표 버튼을 숨김 */
+.snoreSwiper .swiper-button-next,
+.snoreSwiper .swiper-button-prev {
+    display: none;
+}
+
+/* ----------------미디어쿼리 ------------ */
+@media screen and (max-width: 1024px) {
     .info-card-1 {
-        left: 0px;
+        left: -50px;
         /* 창이 좁아지면 카드가 잘리지 않게 사진 안쪽으로 들여보냅니다. */
     }
 
@@ -327,8 +478,50 @@ body {
         right: 0px;
         /* 창이 좁아지면 카드를 안으로 피신시킵니다. */
     }
+
+    .kv-title h3,
+    .snore-top-title h3 {
+        font-size: 2rem;
+    }
+
+    .kv-title h1 {
+        font-size: 4.2rem;
+    }
+
+    .kv-title h2,
+    .check-title h2,
+    .snore-top-title h2 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .desc {
+        font-size: 1.2rem;
+    }
+
+    .cta {
+        padding: 18px 40px;
+        font-size: 1.1rem;
+    }
+
+    .cta img {
+        width: 16px;
+        height: 13px;
+    }
+
+    .check-bottom-text h2 {
+        font-size: 2.8rem;
+    }
+
+    .snore-sub-title {
+        width: 50%;
+        height: auto;
+        padding: 8px 20px;
+        white-space: nowrap;
+    }
 }
 
+/* -----------모바일---------------- */
 @media(max-width:768px) {
     .section-pd {
         padding: 62px 0;
@@ -348,12 +541,50 @@ body {
         height: 60px;
     }
 
-    /* .kv-section {
-        margin-top: 60px;
-        padding: 40px 0;
-        min-height: auto;
-        align-items: flex-start;
-    } */
+    .gnb {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100vw;
+        max-width: none;
+        background: #fff;
+        box-shadow: 0 4px 16px rgba(39, 112, 197, 0.03);
+        transition: transform 0.3s;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        z-index: 100;
+    }
+
+    .gnb.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navi {
+        flex-direction: column;
+        padding: 24px 0;
+        text-align: center;
+        line-height: 2.2;
+    }
+
+    .header-wrap {
+        height: 64px;
+    }
+
+    .nav {
+        line-height: 64px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .gnb {
+        min-width: 150px;
+    }
+
 
     .kv-main {
         flex-direction: column-reverse;
@@ -373,9 +604,12 @@ body {
         font-size: 3rem;
     }
 
-    .kv-title h2 {
+    .kv-title h2,
+    .check-title h2,
+    .snore-top-title h2 {
         font-size: 2rem;
-        letter-spacing: 0px;
+        letter-spacing: -1px;
+        text-align: center;
     }
 
     .desc {
@@ -429,7 +663,6 @@ body {
         margin-top: 5px;
     }
 
-    /* ---------------kv 미디어쿼리 끝------------ */
     .list-item {
         width: 90%;
         height: auto;
@@ -443,22 +676,27 @@ body {
         height: 35px;
     }
 
-    .check-title h2 {
-        text-align: center;
-        font-size: 1.75rem;
-    }
-
     .mo-br {
         display: block;
     }
 
-    .check-title p {
-        font-size: 0.87rem;
+    .snore-sub-title {
+        width: 65%;
+        height: auto;
+        margin: 10px 0 40px;
+    }
+
+    .snore-top-title h3 {
+        font-size: 1rem;
+        letter-spacing: .5px;
+    }
+    .check-title p, .snore-bottom-text p {
+        font-size: 0.89rem;
         letter-spacing: -.5px;
     }
 
     .list-item p {
-        font-size: 0.87rem;
+        font-size: 0.89rem;
         font-weight: 500;
         margin-right: 4px;
         letter-spacing: 0px;
@@ -485,5 +723,74 @@ body {
 
     .check-bottom-text h2 {
         font-size: 1.75rem;
+    }
+
+    .arrow-wrap {
+        display: none;
+    }
+.snore-bottom-text p{ }
+    .snoreSwiper {
+        padding: 0 50px;
+        /* 좌우 화살표 버튼이 들어갈 양옆 여백 */
+        overflow: hidden;
+        /* 모바일에선 화면 밖으로 나간 슬라이드를 숨김 */
+    }
+
+    /* 모바일이 되면 Swiper가 자체적으로 여백을 계산해야 하므로 gap을 꺼버림 */
+    .snoreSwiper .swiper-wrapper {
+        gap: 0 !important;
+    }
+
+    /* 모바일에서는 PC용 장식 화살표(.arrow-wrap)를 없앰 */
+    .arrow-wrap {
+        display: none !important;
+    }
+
+    /* 모바일에서만 좌우 화살표 버튼을 나타나게 함 */
+    .snoreSwiper .swiper-button-next,
+    .snoreSwiper .swiper-button-prev {
+        display: flex;
+        color: #5B92D2;
+        /* 메인 컬러 적용 */
+        transform: scale(0.6);
+        /* 화살표 크기 축소 */
+    }
+    .process1{
+        max-width: 100% !important;
+    }
+    /* 모바일 슬라이드 텍스트 크기 미세 조정 */
+    .process1 p {
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+    .process1 .img-box {
+        width: 100%;
+        max-width: 180px;
+        /* PC 버전(180px)과 동일하게 고정합니다. */
+        margin: 0 auto;
+        /* 상자를 가운데 정렬 */
+    }
+
+    /* 3. 실제 이미지 꽉 채우기 */
+    .img-box>img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-wrap {
+        height: 54px;
+    }
+
+    .nav {
+        line-height: 54px;
+        padding: 0 8px;
+    }
+
+    .logo img {
+        width: 36px;
+        height: 30px;
     }
 }

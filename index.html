@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,114 +8,217 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/indexcommons.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
+
 <body>
-    
-<body>
-    <header class="header-wrap">
-        <nav class="nav">
-            <div class="logo">
-                <img src="assets/images/icon/logo_night.svg" alt="">
-                <h3 class="logo-tit">슬립코어</h3>
-            </div>
-            <div class="gnb">
-                <ul class="navi font-color-s">
-                    <li>
-                        <a href="#">슬립코어 둘러보기</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section class="kv-section section-pd">
-        <div class="container">
-            <div class="kv-main">
-                <!-- 텍스트 영역 (왼쪽) -->
-                <div class="kv-title">
-                    <h3 class="third-title font-color-m">잠 못 드는 이유, 있다</h3>
-                    <h1 class="main-title font-color-s">수면검사</h1>
-                    <h2 class="sub-title font-color-m">숨은 원인을 찾습니다</h2>
-                    <p class="desc font-color-a ac-title">
-                        불면증, 코골이, 만성피로<br>
-                        혼자 고민하지 말고 수면 전문가에게 맡기세요!
-                    </p>
-                    <a href="#" class="cta">
-                        온라인 진료 무료
-                        <img src="assets/images/icon/arrow.svg" alt="">
-                    </a>
+
+    <body>
+        <header class="header-wrap">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="assets/images/icon/logo_night.svg" alt="슬립코어 로고">
+                    <h3 class="logo-tit">슬립코어</h3>
                 </div>
-                <!-- 비주얼 영역 (오른쪽) -->
-                <div class="class-visual">
-                    <img src="assets/images/doctor.png" class="main-img" alt="">
-                    <div class="info-card-1">
-                        <div class="card-top">
-                            <img src="assets/images/icon/icon1.png" alt="">
-                            <div class="card-title">
-                                이젠란스 병원
+                <button class="menu-toggle" aria-label="메뉴 열기">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <div class="gnb">
+                    <ul class="navi font-color-s">
+                        <li>
+                            <a href="#">슬립코어 둘러보기</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <script>
+            // 반응형 메뉴 토글 스크립트
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.querySelector('.menu-toggle');
+                const gnb = document.querySelector('.gnb');
+                menuToggle.addEventListener('click', function () {
+                    gnb.classList.toggle('active');
+                    this.classList.toggle('active');
+                });
+            });
+        </script>
+        <section class="kv-section section-pd">
+            <div class="container">
+                <div class="kv-main">
+                    <!-- 텍스트 영역 (왼쪽) -->
+                    <div class="kv-title">
+                        <h3 class="third-title font-color-m">잠 못 드는 이유, 있다</h3>
+                        <h1 class="main-title font-color-s">수면검사</h1>
+                        <h2 class="sub-title font-color-m">숨은 원인을 찾습니다</h2>
+                        <p class="desc font-color-a ac-title">
+                            불면증, 코골이, 만성피로<br>
+                            혼자 고민하지 말고 수면 전문가에게 맡기세요!
+                        </p>
+                        <a href="#" class="cta">
+                            온라인 진료 무료
+                            <img src="assets/images/icon/arrow.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- 비주얼 영역 (오른쪽) -->
+                    <div class="class-visual">
+                        <img src="assets/images/doctor.png" class="main-img" alt="">
+                        <div class="info-card-1">
+                            <div class="card-top">
+                                <img src="assets/images/icon/icon1.png" alt="">
+                                <div class="card-title">
+                                    이젠란스 병원
+                                </div>
+                            </div>
+                            <div class="card-bottom">정신건강의학과 출신 전문의 진단
                             </div>
                         </div>
-                        <div class="card-bottom">정신건강의학과 출신 전문의 진단
-                        </div>
-                    </div>
-                    <div class="info-card-2">
-                        <div class="card-top">
-                            <img src="assets/images/icon/icon2.png" alt="">
-                            <div class="card-title">
-                                보건복지부
+                        <div class="info-card-2">
+                            <div class="card-top">
+                                <img src="assets/images/icon/icon2.png" alt="">
+                                <div class="card-title">
+                                    보건복지부
+                                </div>
+                            </div>
+                            <div class="card-bottom">건강보험 적용, 의료기관 인증 기관
                             </div>
                         </div>
-                        <div class="card-bottom">건강보험 적용, 의료기관 인증 기관
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!------------------------ 1 : kv 끝----------- -->
-    <section class="check-section section-pd">
-        <div class="container">
-            <div class="check-top-tit">
-                <!-- 상단 텍스트 및 이모지 -->
-                <div class="check-title">
-                    <img src="assets/images/icon/66.png" alt="">
-                    <h2 class="sub-title font-color-m">혹시 나도 <span class="highlight">수면 문제</span>가 <br class="mo-br"> 있는 걸까요?</h2>
-                    <p class="ac-title font-color-a">* 아래 항목 중 해당되는 것이 있는지 확인해보세요</p>
+        </section>
+        <!------------------------ 1 : kv 끝----------- -->
+        <section class="check-section section-pd">
+            <div class="container">
+                <div class="check-top-tit">
+                    <!-- 상단 텍스트 및 이모지 -->
+                    <div class="check-title">
+                        <img src="assets/images/icon/66.png" alt="">
+                        <h2 class="sub-title font-color-m">혹시 나도 <span class="highlight">수면 문제</span>가 <br
+                                class="mo-br"> 있는 걸까요?</h2>
+                        <p class="ac-title font-color-a">* 아래 항목 중 해당되는 것이 있는지 확인해보세요</p>
+                    </div>
+                </div>
+                <!-- 체크리스트 6개 -->
+                <div class="lists">
+                    <div class="list-item list-1">
+                        <p>코 고는 소리 때문에 가족들이 힘들어해요</p>
+                        <img src="assets/images/icon/imo1.png" alt="">
+                    </div>
+                    <div class="list-item list-2">
+                        <p>낮에 졸음이 쏟아져서 업무에 지장이 있어요</p>
+                        <img src="assets/images/icon/imo2.png" alt="">
+                    </div>
+                    <div class="list-item list-3">
+                        <p>자다가 숨이 막히는 느낌에 놀라서 깬 적이 있어요</p>
+                        <img src="assets/images/icon/imo3.png" alt="">
+                    </div>
+                    <div class="list-item list-4">
+                        <p>아침마다 머리가 무겁고 개운한 날이 거의 없어요</p>
+                        <img src="assets/images/icon/imo4.png" alt="">
+                    </div>
+                    <div class="list-item list-5">
+                        <p>밤에 몇 번씩 깨서 항상 깊게 못 자요</p>
+                        <img src="assets/images/icon/imo5.png" alt="">
+                    </div>
+                    <div class="list-item list-6">
+                        <p>집중이 안 되고 예민해져서 일상생활이 힘들어요</p>
+                        <img src="assets/images/icon/imo6.png" alt="">
+                    </div>
+                </div>
+                <div class="dots">
+                    <img src="assets/images/icon/dots.svg" alt="">
+                </div>
+                <div class="check-bottom-text">
+                    <h2 class="sub-font">"3개 이상 해당된다면 <br class="mo-br"> <span class="check-highlight">수면다원검사가
+                            필요</span>할 수 있습니다" </h2>
                 </div>
             </div>
-            <!-- 체크리스트 6개 -->
-            <div class="lists">
-                <div class="list-item list-1">
-                    <p>코 고는 소리 때문에 가족들이 힘들어해요</p>
-                    <img src="assets/images/icon/imo1.png" alt="">
+        </section>
+        <!----------------- 체크리스트 끝--------------- -->
+        <section class="snore-section section-pd">
+            <div class="container">
+                <div class="snore-top-title">
+                    <h2 class="sub-title font-color-m"><span class="highlight">코골이,</span> 방치하면 <br class="mo-br"> 여기까지
+                        이어질 수 있습니다</h2>
+                    <h3 class="snore-sub-title third-title">코골이는 이렇게 악화됩니다</h3>
                 </div>
-                <div class="list-item list-2">
-                    <p>낮에 졸음이 쏟아져서 업무에 지장이 있어요</p>
-                    <img src="assets/images/icon/imo2.png" alt="">
+                <div class="swiper snoreSwiper">
+                    <div class="swiper-wrapper snore-process">
+
+                        <div class="swiper-slide process1">
+                            <div class="img-box">
+                                <img src="assets/images/snoreprocess1.png" alt="수면">
+                                <div class="arrow-wrap">
+                                    <img src="assets/images/icon/snore-arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <p>수면</p>
+                        </div>
+
+                        <div class="swiper-slide process1">
+                            <div class="img-box">
+                                <img src="assets/images/snoreprocess2.png" alt="코골이">
+                                <div class="arrow-wrap">
+                                    <img src="assets/images/icon/snore-arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <p>코골이</p>
+                        </div>
+
+                        <div class="swiper-slide process1">
+                            <div class="img-box">
+                                <img src="assets/images/snoreprocess3.png" alt="수면무호흡증">
+                                <div class="arrow-wrap">
+                                    <img src="assets/images/icon/snore-arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <p>수면무호흡증</p>
+                        </div>
+
+                        <div class="swiper-slide process1">
+                            <div class="img-box">
+                                <img src="assets/images/snoreprocess4.png" alt="각종질환유발">
+                            </div>
+                            <p>각종질환유발</p>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                <div class="list-item list-3">
-                    <p>자다가 숨이 막히는 느낌에 놀라서 깬 적이 있어요</p>
-                    <img src="assets/images/icon/imo3.png" alt="">
-                </div>
-                <div class="list-item list-4">
-                    <p>아침마다 머리가 무겁고 개운한 날이 거의 없어요</p>
-                    <img src="assets/images/icon/imo4.png" alt="">
-                </div>
-                <div class="list-item list-5">
-                    <p>밤에 몇 번씩 깨서 항상 깊게 못 자요</p>
-                    <img src="assets/images/icon/imo5.png" alt="">
-                </div>
-                <div class="list-item list-6">
-                    <p>집중이 안 되고 예민해져서 일상생활이 힘들어요</p>
-                    <img src="assets/images/icon/imo6.png" alt="">
+                <div class="snore-bottom-text">
+                    <p class="sub-body font-color-m">코골이는 점점 심해지며 수면무호흡증으로 이어질 수 있습니다<br>
+                        수면 중 반복적인 호흡 중단은 산소 부족을 유발하고,<br class="mo-br">결국 다양한 질환의 원인이 될 수 있습니다</p>
                 </div>
             </div>
-            <div class="dots">
-                <img src="assets/images/icon/dots.svg" alt="">
-            </div>
-            <div class="check-bottom-text">
-                <h2 class="sub-font">"3개 이상 해당된다면 <br class="mo-br"> <span class="check-highlight">수면다원검사가 필요</span>할 수 있습니다" </h2>
-            </div>
-        </div>
-    </section>
-</body>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <script>
+            const snoreSwiper = new Swiper(".snoreSwiper", {
+                // --- 모바일 전용 기본 설정 (768px 이하일 때 작동) ---
+                slidesPerView: 1, // 화면에 무조건 1개만 보임
+                slidesPerGroup: 1, // 화살표 누를 때 무조건 1개씩만 넘어감 (중요!)
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: ".snoreSwiper .swiper-button-next",
+                    prevEl: ".snoreSwiper .swiper-button-prev",
+                },
+
+                // --- PC 해상도 설정 (769px 이상일 때 덮어쓰기) ---
+                breakpoints: {
+                    769: {
+                        enabled: false, // 슬라이더 기능 자체를 꺼버림
+                        slidesPerView: 4, // 4개가 보이게 세팅 (CSS가 우선이라 큰 의미는 없음)
+                        slidesPerGroup: 4, // 혹시 몰라 4개 그룹으로 맞춰둠
+                    }
+                }
+            });
+        </script>
+    </body>
+
 </html>
