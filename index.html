@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>슬립코어 반응형</title>
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/indexcommons.css">
+    <link rel="stylesheet" href="assets/css/commons.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
@@ -20,11 +20,6 @@
                     <img src="assets/images/icon/logo_night.svg" alt="슬립코어 로고">
                     <h3 class="logo-tit">슬립코어</h3>
                 </div>
-                <button class="menu-toggle" aria-label="메뉴 열기">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
                 <div class="gnb">
                     <ul class="navi font-color-s">
                         <li>
@@ -34,17 +29,6 @@
                 </div>
             </nav>
         </header>
-        <script>
-            // 반응형 메뉴 토글 스크립트
-            document.addEventListener('DOMContentLoaded', function () {
-                const menuToggle = document.querySelector('.menu-toggle');
-                const gnb = document.querySelector('.gnb');
-                menuToggle.addEventListener('click', function () {
-                    gnb.classList.toggle('active');
-                    this.classList.toggle('active');
-                });
-            });
-        </script>
         <section class="kv-section section-pd">
             <div class="container">
                 <div class="kv-main">
@@ -52,7 +36,7 @@
                     <div class="kv-title">
                         <h3 class="third-title font-color-m">잠 못 드는 이유, 있다</h3>
                         <h1 class="main-title font-color-s">수면검사</h1>
-                        <h2 class="sub-title font-color-m">숨은 원인을 찾습니다</h2>
+                        <h2 class="mo-title ta-title sub-title font-color-m">숨은 원인을 찾습니다</h2>
                         <p class="desc font-color-a ac-title">
                             불면증, 코골이, 만성피로<br>
                             혼자 고민하지 말고 수면 전문가에게 맡기세요!
@@ -96,8 +80,9 @@
                     <!-- 상단 텍스트 및 이모지 -->
                     <div class="check-title">
                         <img src="assets/images/icon/66.png" alt="">
-                        <h2 class="sub-title font-color-m">혹시 나도 <span class="highlight">수면 문제</span>가 <br
-                                class="mo-br"> 있는 걸까요?</h2>
+                        <h2 class="mo-title ta-title sub-title font-color-m">혹시 나도 <span class="highlight">수면 문제</span>가
+                            <br class="mo-br"> 있는 걸까요?
+                        </h2>
                         <p class="ac-title font-color-a">* 아래 항목 중 해당되는 것이 있는지 확인해보세요</p>
                     </div>
                 </div>
@@ -132,7 +117,7 @@
                     <img src="assets/images/icon/dots.svg" alt="">
                 </div>
                 <div class="check-bottom-text">
-                    <h2 class="sub-font">"3개 이상 해당된다면 <br class="mo-br"> <span class="check-highlight">수면다원검사가
+                    <h2 class="ta-title mo-title sub-font">"3개 이상 해당된다면 <br class="mo-br"> <span class="check-highlight">수면다원검사가
                             필요</span>할 수 있습니다" </h2>
                 </div>
             </div>
@@ -141,44 +126,36 @@
         <section class="snore-section section-pd">
             <div class="container">
                 <div class="snore-top-title">
-                    <h2 class="sub-title font-color-m"><span class="highlight">코골이,</span> 방치하면 <br class="mo-br"> 여기까지
+                    <h2 class="mo-title ta-title sub-title font-color-m"><span class="highlight">코골이,</span> 방치하면 <br
+                            class="mo-br"> 여기까지
                         이어질 수 있습니다</h2>
                     <h3 class="snore-sub-title third-title">코골이는 이렇게 악화됩니다</h3>
                 </div>
-                <div class="swiper snoreSwiper">
-                    <div class="swiper-wrapper snore-process">
+                <div class="swiper coverflowSwiper">
+                    <div class="swiper-wrapper">
 
-                        <div class="swiper-slide process1">
+                        <div class="swiper-slide process-card">
                             <div class="img-box">
                                 <img src="assets/images/snoreprocess1.png" alt="수면">
-                                <div class="arrow-wrap">
-                                    <img src="assets/images/icon/snore-arrow.svg" alt="">
-                                </div>
                             </div>
                             <p>수면</p>
                         </div>
 
-                        <div class="swiper-slide process1">
+                        <div class="swiper-slide process-card">
                             <div class="img-box">
                                 <img src="assets/images/snoreprocess2.png" alt="코골이">
-                                <div class="arrow-wrap">
-                                    <img src="assets/images/icon/snore-arrow.svg" alt="">
-                                </div>
                             </div>
                             <p>코골이</p>
                         </div>
 
-                        <div class="swiper-slide process1">
+                        <div class="swiper-slide process-card">
                             <div class="img-box">
                                 <img src="assets/images/snoreprocess3.png" alt="수면무호흡증">
-                                <div class="arrow-wrap">
-                                    <img src="assets/images/icon/snore-arrow.svg" alt="">
-                                </div>
                             </div>
                             <p>수면무호흡증</p>
                         </div>
 
-                        <div class="swiper-slide process1">
+                        <div class="swiper-slide process-card">
                             <div class="img-box">
                                 <img src="assets/images/snoreprocess4.png" alt="각종질환유발">
                             </div>
@@ -187,38 +164,151 @@
 
                     </div>
 
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="snore-bottom-text">
-                    <p class="sub-body font-color-m">코골이는 점점 심해지며 수면무호흡증으로 이어질 수 있습니다<br>
-                        수면 중 반복적인 호흡 중단은 산소 부족을 유발하고,<br class="mo-br">결국 다양한 질환의 원인이 될 수 있습니다</p>
-                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="snore-bottom-text">
+                <p class="sub-body font-color-m">코골이는 점점 심해지며 수면무호흡증으로 이어질 수 있습니다<br>
+                    수면 중 반복적인 호흡 중단은 산소 부족을 유발하고,<br class="mo-br">결국 다양한 질환의 원인이 될 수 있습니다</p>
+            </div>
             </div>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
         <script>
-            const snoreSwiper = new Swiper(".snoreSwiper", {
-                // --- 모바일 전용 기본 설정 (768px 이하일 때 작동) ---
-                slidesPerView: 1, // 화면에 무조건 1개만 보임
-                slidesPerGroup: 1, // 화살표 누를 때 무조건 1개씩만 넘어감 (중요!)
-                spaceBetween: 20,
-                navigation: {
-                    nextEl: ".snoreSwiper .swiper-button-next",
-                    prevEl: ".snoreSwiper .swiper-button-prev",
-                },
+            var swiper = new Swiper(".coverflowSwiper", {
+                effect: "coverflow",
+                grabCursor: true,      /* 마우스를 올렸을 때 손아귀 모양으로 변함 */
+                centeredSlides: true,  /* 활성화된 슬라이드가 무조건 정중앙에 오도록 설정 */
+                slidesPerView: "auto", /* CSS에서 지정한 .swiper-slide의 width(280px)를 자동으로 인식함 */
 
-                // --- PC 해상도 설정 (769px 이상일 때 덮어쓰기) ---
-                breakpoints: {
-                    769: {
-                        enabled: false, // 슬라이더 기능 자체를 꺼버림
-                        slidesPerView: 4, // 4개가 보이게 세팅 (CSS가 우선이라 큰 의미는 없음)
-                        slidesPerGroup: 4, // 혹시 몰라 4개 그룹으로 맞춰둠
-                    }
-                }
+                coverflowEffect: {
+                    rotate: 40,        /* 옆 슬라이드가 꺾이는 각도 (기본 50보다 살짝 완만하게) */
+                    stretch: 0,        /* 슬라이드 간의 당겨짐 정도 */
+                    depth: 100,        /* 옆 슬라이드가 뒤로 물러나는 깊이감 */
+                    modifier: 1,       /* 효과 배수 */
+                    slideShadows: false, /* 원형 PNG 이미지 뒤에 네모난 검은 그림자가 생기는 것을 방지 */
+                },
+                pagination: {
+                    el: ".coverflowSwiper .swiper-pagination",
+                    clickable: true,   /* 점을 클릭해서 이동할 수 있게 허용 */
+                },
             });
         </script>
+        <section class="inspection-section section-pd">
+            <div class="container">
+                <div class="inspection-tit">
+                    <h2 class="mo-title ta-title sub-title font-color-m"><span class="highlight">정확한 원인</span>은 검사로 <br
+                            class="mo-br">확인할 수 있습니다</h2>
+                </div>
+                <div class="inspection-text">
+                    <p class="mo-p2 font-color-m">수면다원검사는 수면 중 뇌파, 호흡, 산소포화도 등을 <br class="mo-br">정밀하게 측정해 <br
+                            class="pc-br"><span class="highlight">겉으로
+                            드러나지 않는 수면 문제의 <br class="mo-br">원인을 정확하게 찾아내는 검사</span> 입니다</p>
+                </div>
+                <div class="inspection-text2">
+                    <p class="mo-p2 font-color-m">단순한 증상이 아닌,<br><span class="highlight">문제의 '근본 원인'을 확인</span> 할 수
+                        있습니다
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-------------- 검사 설명 끝--------- -->
+        <section class="process-section section-pd">
+            <div class="container">
+                <div class="process-tit">
+                    <h2 class="mo-title ta-title sub-title font-color-m">슬립코어의 <span
+                            class="highlight">수면다원검사</span>는<br>이렇게 진행됩니다</h2>
+                </div>
+                <div class="process-4box">
+                    <div class="process-2box">
+                        <div class="pro-box">
+                            <div class="pro-pics">
+                                <img src="assets/images/pro-pic1.png" alt="">
+                            </div>
+                            <div class="pro-text">
+                                <div class="pro-top-text font-color-m">
+                                    <img src="assets/images/icon/pro-num1.svg" alt="">
+                                    <h3 class="third-title">전문의 상담</h3>
+                                </div>
+                                <div class="pro-bottom-text font-color-m">
+                                    <p class="mo-p2 sub-body">수면 상태와 현재 겪고 있는 증상을 상담합니다<br>
+                                        평소 수면 습관과 코골이, 피로 여부 등을 함께 확인합니다</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-box">
+                            <div class="pro-pics">
+                                <img src="assets/images/pro-pic2.png" alt="">
+                            </div>
+                            <div class="pro-text">
+                                <div class="pro-top-text font-color-m">
+                                    <img src="assets/images/icon/pro-num2.svg" alt="">
+                                    <h3 class="third-title">검사 장비 부착</h3>
+                                </div>
+                                <div class="pro-bottom-text font-color-m">
+                                    <p class="mo-p2 sub-body">뇌파, 호흡, 심박수 등을 측정하는 센서를 부착합니다<br>
+                                        수면 중 발생하는 다양한 신체 변화를 기록합니다</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-2box">
+                        <div class="pro-box">
+                            <div class="pro-pics">
+                                <img src="assets/images/pro-pic3.png" alt="">
+                            </div>
+                            <div class="pro-text">
+                                <div class="pro-top-text font-color-m">
+                                    <img src="assets/images/icon/pro-num3.svg" alt="">
+                                    <h3 class="third-title">수면 검사 진행</h3>
+                                </div>
+                                <div class="pro-bottom-text font-color-m">
+                                    <p class="mo-p2 sub-body">병원 수면실에서 평소처럼 편안하게 잠을 잡니다<br>
+                                        검사 장비를 통해 수면 상태가 밤 동안 기록됩니다</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-box">
+                            <div class="pro-pics">
+                                <img src="assets/images/pro-pic4.png" alt="">
+                            </div>
+                            <div class="pro-text">
+                                <div class="pro-top-text font-color-m">
+                                    <img src="assets/images/icon/pro-num4.svg" alt="">
+                                    <h3 class="third-title ">검사 결과 상담</h3>
+                                </div>
+                                <div class="pro-bottom-text font-color-m">
+                                    <p class="mo-p2 sub-body">수면 데이터를 분석한 후 전문의가 결과를 설명합니다<br>
+                                        수면 장애 여부와 필요한 치료 방향을 안내합니다</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------- 검사과정 끝 ----------- -->
+        <section class="checkbefore-section section-pd">
+            <div class="container">
+                <div class="checkb-tit">
+                    <h2 class="mo-title ta-title sub-title font-color-m"><span class="highlight">수면다원검사</span> 전,<br
+                            class="mo-br">미리 확인해 주세요</h2>
+                </div>
+                <div class="checkbpic">
+                    <img src="assets/images/check-b1.png">
+                    <img src="assets/images/check-b2.png">
+                    <img src="assets/images/check-b3.png">
+                    <img src="assets/images/check-b4.png">
+                </div>
+                <div class="checkb-bottom-text">
+                    <h2 class="mo-title ta-title sub-font">"간단한 준비만으로<br class="mo-br"> 보다 <span class="checkb-highlight">정확한 수면다원검사</span>가 가능합니다" </h2>
+                </div>
+            </div>
+        </section>
     </body>
 
 </html>

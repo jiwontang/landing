@@ -30,41 +30,6 @@ body {
     z-index: 100;
 }
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 101;
-}
-
-.menu-toggle .bar {
-    display: block;
-    width: 26px;
-    height: 3px;
-    margin: 4px 0;
-    background: #2570C5;
-    border-radius: 2px;
-    transition: all 0.3s;
-}
-
-.menu-toggle.active .bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-}
-
-.menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.active .bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-}
-
 .nav {
     width: 100%;
     max-width: 1088px;
@@ -211,7 +176,6 @@ body {
 
 .card-title {
     font-size: clamp(1rem, 1.8vw, 1.43rem);
-    /* font-size: 23px; */
     font-weight: 900;
     letter-spacing: -1px;
     color: #4b4b4b;
@@ -384,7 +348,7 @@ body {
 
 .snore-bottom-text p {
     font-size: 1.25rem;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .snore-process img {
@@ -426,46 +390,181 @@ body {
     color: #5B92D2;
 }
 
-.arrow-wrap {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -30px;
-    z-index: 10;
+/* --- Coverflow 슬라이더 기본 설정 --- */
+.coverflowSwiper {
     width: 100%;
-    max-width: 20px;
-    height: auto;
+    max-width: 1088px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
 }
 
-.arrow-wrap img {
+/* 개별 슬라이드의 크기와 정렬 설정 */
+.coverflowSwiper .swiper-slide {
+    width: 280px;
+    /* PC에서 보여질 슬라이드 카드의 적정 너비 */
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    margin: 0 15px;
+
+}
+
+/* 원형 이미지 상자 설정 */
+.coverflowSwiper .img-box {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 30px;
+}
+
+.coverflowSwiper .img-box img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* --- [style.css] 미디어 쿼리 위쪽에 붙여넣기 (PC 기본 설정) --- */
-
-.snoreSwiper {
-    width: 100%;
-    max-width: 1088px;
-    margin: 0 auto;
-    overflow: visible;
-    /* PC에선 그림자나 이미지가 잘리지 않게 다 보여줌 */
+/* 텍스트 설정 */
+.coverflowSwiper .process-card p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5B92D2;
 }
 
-/* PC에서는 4개가 나란히 배치되도록 설정 */
-.snoreSwiper .swiper-wrapper {
+/* 하단 점(Pagination) 메인 컬러로 변경 */
+.coverflowSwiper .swiper-pagination-bullet-active {
+    background-color: #5B92D2;
+}
+
+.coverflowSwiper .swiper-pagination {
+    bottom: 10px !important;
+}
+
+/* 코골이위험 pc끝 */
+.inspection-section {
+    background-color: #F2F4F6;
+}
+
+.inspection-tit {
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.inspection-text,
+.inspection-text2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.5;
+}
+
+.inspection-text {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.inspection-text2 {
+    text-align: center;
+}
+
+.pc-br {
+    display: block;
+}
+
+.process-section {
+    background: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 100%);
+}
+
+.process-tit {
+    margin-bottom: 106px;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    /* 화살표가 들어갈 넉넉한 간격 */
+    text-align: center;
 }
 
-/* PC에서는 Swiper가 만들어내는 좌우 화살표 버튼을 숨김 */
-.snoreSwiper .swiper-button-next,
-.snoreSwiper .swiper-button-prev {
-    display: none;
+.pro-top-text {
+    margin: 30px 0;
 }
+
+.pro-pics {
+    width: 100%;
+    height: auto;
+
+}
+
+.pro-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-bottom-text p {
+    letter-spacing: -.5px;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: 1.25rem;
+}
+
+.process-2box {
+    display: flex;
+    gap: 50px;
+}
+
+.process-4box {
+    display: flex;
+    flex-direction: column;
+    gap: 106px;
+}
+
+.pro-top-text {
+    display: flex;
+    gap: 8px;
+}
+
+.checkbefore-section {
+    background-color: #F2F4F6;
+}
+
+.checkbpic {
+    display: flex;
+    gap: 40px;
+}
+
+.checkbpic img {
+    width: calc(25% - 30px);
+}
+
+.checkb-tit {
+    margin: 0 0 106px;
+    text-align: center;
+}
+
+.checkb-bottom-text {
+    text-align: center;
+    margin-top: 160px;
+}
+
+.checkb-highlight {
+    display: inline-block;
+    position: relative;
+    color: #2570C5;
+    z-index: 1;
+}
+
+.checkb-highlight::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    background-color: #CCDCEE;
+    z-index: -1;
+}
+
+
 
 /* ----------------미디어쿼리 ------------ */
 @media screen and (max-width: 1024px) {
@@ -488,11 +587,18 @@ body {
         font-size: 4.2rem;
     }
 
-    .kv-title h2,
-    .check-title h2,
-    .snore-top-title h2 {
+    .ta-title {
         font-size: 2.8rem;
         text-align: center;
+    }
+
+    .pro-bottom-text p {
+        font-size: 1rem;
+        letter-spacing: -.5px;
+    }
+
+    .process-2box {
+        gap: 30px;
     }
 
     .desc {
@@ -509,15 +615,19 @@ body {
         height: 13px;
     }
 
-    .check-bottom-text h2 {
-        font-size: 2.8rem;
-    }
-
     .snore-sub-title {
         width: 50%;
         height: auto;
         padding: 8px 20px;
         white-space: nowrap;
+    }
+
+    .pc-br {
+        display: block;
+    }
+
+    .mo-br {
+        display: none;
     }
 }
 
@@ -542,31 +652,14 @@ body {
     }
 
     .gnb {
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 100vw;
-        max-width: none;
-        background: #fff;
-        box-shadow: 0 4px 16px rgba(39, 112, 197, 0.03);
-        transition: transform 0.3s;
-        transform: translateY(-100%);
-        opacity: 0;
-        pointer-events: none;
-        z-index: 100;
-    }
-
-    .gnb.active {
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: auto;
+        display: flex;
+        align-items: center;
+        /* min-width:150px; */
     }
 
     .navi {
-        flex-direction: column;
-        padding: 24px 0;
         text-align: center;
-        line-height: 2.2;
+        line-height: 60px;
     }
 
     .header-wrap {
@@ -581,11 +674,6 @@ body {
         display: flex;
     }
 
-    .gnb {
-        min-width: 150px;
-    }
-
-
     .kv-main {
         flex-direction: column-reverse;
         align-items: center;
@@ -596,7 +684,8 @@ body {
         align-items: center;
     }
 
-    .kv-title h3 {
+    .kv-title h3,
+    .check-bottom-text h2 {
         font-size: 1.75rem;
     }
 
@@ -604,12 +693,11 @@ body {
         font-size: 3rem;
     }
 
-    .kv-title h2,
-    .check-title h2,
-    .snore-top-title h2 {
-        font-size: 2rem;
-        letter-spacing: -1px;
+    .mo-title {
+        font-size: 1.75rem;
+        letter-spacing: 0px;
         text-align: center;
+        line-height: 1.2;
     }
 
     .desc {
@@ -690,7 +778,9 @@ body {
         font-size: 1rem;
         letter-spacing: .5px;
     }
-    .check-title p, .snore-bottom-text p {
+
+    .check-title p,
+    .snore-bottom-text p {
         font-size: 0.89rem;
         letter-spacing: -.5px;
     }
@@ -713,7 +803,7 @@ body {
         height: 20px;
     }
 
-    .check-highlight::after {
+    .check-highlight::after, .checkb-highlight::after {
         height: 16px;
     }
 
@@ -721,63 +811,73 @@ body {
         margin: 0;
     }
 
-    .check-bottom-text h2 {
-        font-size: 1.75rem;
+    .mo-p2 {
+        font-size: 1rem;
+        letter-spacing: -.5px;
     }
 
-    .arrow-wrap {
+    .pc-br {
         display: none;
     }
-.snore-bottom-text p{ }
-    .snoreSwiper {
-        padding: 0 50px;
-        /* 좌우 화살표 버튼이 들어갈 양옆 여백 */
-        overflow: hidden;
-        /* 모바일에선 화면 밖으로 나간 슬라이드를 숨김 */
-    }
 
-    /* 모바일이 되면 Swiper가 자체적으로 여백을 계산해야 하므로 gap을 꺼버림 */
-    .snoreSwiper .swiper-wrapper {
-        gap: 0 !important;
-    }
-
-    /* 모바일에서는 PC용 장식 화살표(.arrow-wrap)를 없앰 */
-    .arrow-wrap {
-        display: none !important;
-    }
-
-    /* 모바일에서만 좌우 화살표 버튼을 나타나게 함 */
-    .snoreSwiper .swiper-button-next,
-    .snoreSwiper .swiper-button-prev {
+    .process-4box,
+    .process-2box {
         display: flex;
-        color: #5B92D2;
-        /* 메인 컬러 적용 */
-        transform: scale(0.6);
-        /* 화살표 크기 축소 */
-    }
-    .process1{
-        max-width: 100% !important;
-    }
-    /* 모바일 슬라이드 텍스트 크기 미세 조정 */
-    .process1 p {
-        font-size: 1.2rem;
-        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .process1 .img-box {
-        width: 100%;
-        max-width: 180px;
-        /* PC 버전(180px)과 동일하게 고정합니다. */
-        margin: 0 auto;
-        /* 상자를 가운데 정렬 */
+    .process-tit {
+        margin-bottom: 50px;
     }
 
-    /* 3. 실제 이미지 꽉 채우기 */
-    .img-box>img {
-        width: 100%;
+    .pro-box {
+        width: 95%;
+    }
+
+    .pro-top-text {
+        margin: 15px 0;
+    }
+
+    .pro-top-text img {
+        width: 24px;
         height: auto;
     }
+
+    .pro-top-text h3 {
+        font-size: 1.25rem;
+    }
+
+    .process-4box {
+        gap: 35px;
+    }
+
+    .process-2box {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .checkb-tit {
+        margin: 0 0 35px;
+    }
+
+    .checkbpic {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .checkbpic img {
+        width: calc(50% - 20px);
+    }
+
+    .checkb-bottom-text {
+        margin-top: 35px;
+    }
+
 }
+
 
 @media (max-width: 480px) {
     .header-wrap {
@@ -792,5 +892,9 @@ body {
     .logo img {
         width: 36px;
         height: 30px;
+    }
+
+    .pc-br {
+        display: none;
     }
 }
