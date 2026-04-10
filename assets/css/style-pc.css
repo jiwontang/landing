@@ -757,7 +757,7 @@
     margin-right: 10px;
 
     /* 경로 앞에 /를 붙이거나 ../를 붙여가며 테스트해보세요 */
-    background-image: url('../images/check.svg');
+    background-image: url('../images/icon/check.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

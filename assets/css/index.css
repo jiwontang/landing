@@ -543,7 +543,7 @@ body {
 
 .checkb-bottom-text {
     text-align: center;
-    margin-top: 160px;
+    margin-top: 10rem;
 }
 
 .checkb-highlight {
@@ -564,7 +564,454 @@ body {
     z-index: -1;
 }
 
+.trust-section {
+    background-color: #5b92d2;
+}
 
+.logo-text img {
+    width: 59px;
+    height: auto;
+}
+
+.logo-text h2 {
+    color: #fff;
+}
+
+.logo-text {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+.trust-top-tit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trust-top-tit p {
+    text-align: right;
+    color: #fff;
+}
+
+.trust-main-text {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.trust-sub-text {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.trust-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 9rem;
+    background-color: #2570C5;
+    border-radius: 15px;
+    padding: 25px 30px;
+    max-width: 370px;
+    width: 100%;
+    min-height: 215px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    overflow: visible;
+}
+
+.trust-box-icon {
+    width: 145px;
+    height: auto;
+    position: absolute;
+    top: -35%;
+    left: 50%;
+}
+
+.trust-3box {
+    display: flex;
+    gap: 20px;
+}
+
+.review-section {
+    background-color: #F2F4F6;
+}
+
+.review-top-tit {
+    margin-bottom: 106px;
+    text-align: center;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 737px;
+    height: auto;
+    padding: 35px 36px;
+    background-color: #fff;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 25px;
+    position: relative;
+}
+
+.re-right {
+    align-self: flex-end;
+}
+
+.card-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.review-info {
+    display: flex;
+    gap: 11px;
+}
+
+.review-card-tit {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -1px;
+}
+
+.review-card-con {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.review-top-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 21px;
+}
+
+.card-name {
+    font-size: 1.25rem;
+}
+
+.card-age {
+    font-size: 1rem;
+}
+
+.review-name {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.review-star {
+    margin-left: auto;
+}
+
+.review-card:nth-child(1n) {
+    margin-top: -10px;
+}
+
+.review-card:nth-child(1) {
+    z-index: 4;
+}
+
+.review-card:nth-child(2) {
+    z-index: 3;
+}
+
+.review-card:nth-child(3) {
+    z-index: 2;
+}
+
+.review-card:nth-child(4) {
+    z-index: 1;
+}
+
+.price-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-section {
+    background: linear-gradient(to bottom, #ffffff 0, #EFEFEF 100%);
+}
+
+.price-main-tit p {
+    font-size: 1rem;
+    color: #161616;
+}
+
+.price-main-tit h3 {
+    color: #2570C5;
+    line-height: 1.2;
+}
+
+.price-main-tit {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.price-main-box {
+    background-color: #ffffff;
+    padding: 26px 34px;
+    border-radius: 21px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-box-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-price p {
+    letter-spacing: 0;
+}
+
+.price-dis {
+    gap: 7px;
+    display: flex;
+}
+
+.price-dis p {
+    align-self: flex-end;
+}
+
+.price-dis h3 {
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+
+.price-info {
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.price-con {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+.price-list {
+    list-style: circle;
+    padding-left: 0;
+}
+
+.price-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.price-list li::before {
+    content: "•";
+    font-size: 1.5rem;
+    color: #161616;
+
+}
+
+.recta-section {
+    background-color: #161616;
+}
+
+.recta-all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recta-main-tit {
+    justify-content: center;
+}
+
+.recta-main-tit {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recta-main-tit h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+
+.recta-main-tit p {
+    color: #fff;
+    letter-spacing: 1px;
+    display: flex;
+}
+
+.third-body::before {
+    content: "";
+    display: inline-block;
+
+    /* 크기가 너무 작으면 안 보일 수 있으니 넉넉히 잡습니다 */
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+
+    /* 경로 앞에 /를 붙이거나 ../를 붙여가며 테스트해보세요 */
+    background-image: url('../images/icon/check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    vertical-align: middle;
+}
+
+.cta-btn {
+    max-width: 378px;
+    min-height: 234px;
+    width: 100%;
+}
+
+.cta-form-row {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.cta-form-row input {
+    padding: 14px 10px;
+    border-radius: 7px;
+    color: #161616;
+    width: 100%;
+}
+
+.cta-name {
+    flex: 3;
+}
+
+.cta-form-row input:last-child {
+    flex: 7;
+}
+
+.cta-con {
+    padding: 14px 10px;
+    border-radius: 7px;
+    color: #161616;
+    /* width: 100%; */
+}
+
+.cta-white {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cta-check label,
+.cta-blue p {
+    color: #D7D7D7;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.cta-form-btn {
+    width: 100%;
+    background-color: #2570C5;
+    border-radius: 7px;
+    padding: 16px 50px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cta-blue {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer-seciton {
+    background-color: #F2F4F6;
+}
+
+.footer-icon {
+    display: flex;
+    width: 46px;
+    height: auto;
+    gap: 12px;
+}
+
+.footer-all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-left h3,
+.footer-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.footer-left p,
+.footer-add {
+    line-height: 1.3;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.footer-left-text,
+.footer-info,
+.footer-add {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-all {
+    padding: 50px 0;
+}
+
+.footer-bottom,
+.personal {
+    display: flex;
+    font-size: 1rem;
+}
+
+.footer-bottom {
+    width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 30px 0 50px;
+}
+
+.personal {
+    gap: 48px;
+
+}
+
+.bold {
+    font-weight: 600;
+    color: #1F2C45;
+}
 
 /* ----------------미디어쿼리 ------------ */
 @media screen and (max-width: 1024px) {
@@ -629,6 +1076,35 @@ body {
     .mo-br {
         display: none;
     }
+
+    .trust-main-text {
+        font-size: 1.25rem;
+    }
+
+    .trust-sub-text {
+        font-size: 0.87rem;
+    }
+
+    .price-main-tit h3,
+    .recta-main-tit h3 {
+        font-size: 1.75rem;
+        letter-spacing: -1px;
+    }
+
+    .price-con {
+        font-size: 1.125rem;
+    }
+
+    .price-main-box {
+        padding: 26px 20px;
+    }
+
+    .price-info {
+        font-size: 0.87rem;
+        letter-spacing: -1px;
+    }
+
+
 }
 
 /* -----------모바일---------------- */
@@ -803,7 +1279,8 @@ body {
         height: 20px;
     }
 
-    .check-highlight::after, .checkb-highlight::after {
+    .check-highlight::after,
+    .checkb-highlight::after {
         height: 16px;
     }
 
@@ -832,7 +1309,7 @@ body {
     }
 
     .pro-box {
-        width: 95%;
+        width: 100%;
     }
 
     .pro-top-text {
@@ -858,24 +1335,253 @@ body {
     }
 
     .checkb-tit {
-        margin: 0 0 35px;
+        margin: 0 0 62px;
     }
 
     .checkbpic {
+        display: flex;
         flex-wrap: wrap;
         gap: 20px;
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
     }
 
     .checkbpic img {
-        width: calc(50% - 20px);
+        width: calc(50% - 10px);
     }
 
     .checkb-bottom-text {
         margin-top: 35px;
     }
 
+    .trust-3box {
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+        margin: 0 auto;
+        align-items: center;
+
+    }
+
+    .trust-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    .trust-top-tit {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .trust-top-tit p {
+        letter-spacing: 0;
+    }
+
+    .logo-text img {
+        width: 45px;
+        height: auto;
+    }
+
+    .logo-text h2 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .trust-top-tit p {
+        text-align: center;
+        margin-top: 5px;
+        font-weight: 400;
+    }
+
+    .right-align {
+        text-align: right;
+        align-items: flex-end;
+        width: 100%;
+
+    }
+
+    .trust-box-icon {
+        width: 130px;
+        height: auto;
+        position: absolute;
+        top: -25%;
+        left: 55%;
+    }
+
+    .right-icon {
+        left: auto;
+        right: 58%;
+    }
+
+    .review-card {
+        gap: 20px;
+
+    }
+
+    .review-card-tit {
+        font-size: 1rem;
+        letter-spacing: -.8px;
+    }
+
+    .review-card-con {
+        font-size: 0.87rem;
+        letter-spacing: -.8px;
+        line-height: 1.4;
+    }
+
+    .review-top-text {
+        row-gap: 18px;
+    }
+
+    .card-4 {
+        gap: 30px;
+    }
+
+    .review-top-tit {
+        margin-bottom: 62px;
+    }
+
+    .review-info img {
+        width: 40px;
+        height: auto;
+    }
+
+    .review-star {
+        width: 80px;
+        height: auto;
+    }
+
+    .card-name {
+        font-size: 1rem;
+    }
+
+    .card-age {
+        font-size: 0.87rem;
+    }
+
+    .price-all {
+        flex-direction: column;
+    }
+
+    .price-main-tit {
+        text-align: center;
+        margin-bottom: 47px;
+        gap: 10px;
+    }
+
+    .price-main-box {
+        width: 100%;
+    }
+
+    .price-main-tit p {
+        font-size: 0.87rem;
+
+    }
+
+    .price-main-tit h3 {
+        font-size: 1.75rem;
+    }
+
+    .price-dis p {
+        font-size: 1rem;
+    }
+
+    .price-dis h3 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .price-price p {
+        font-size: 1rem;
+    }
+
+    .price-list li {
+        font-size: 1.125rem;
+        line-height: 1.4;
+    }
+
+    .recta-main-tit-3p {
+        display: flex;
+    }
+
+    .recta-main-tit p {
+        letter-spacing: -1.5px;
+    }
+
+    .recta-all {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recta-all {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* 제목 가운데 정렬 */
+    .recta-main-tit {
+        align-items: center;
+        text-align: center;
+    }
+
+    .recta-main-tit h3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* 체크포인트 3개 가로 한 줄 */
+    .recta-3p {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* 폼 전체 너비 */
+    .cta-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* 이름/연락처 세로로 */
+    .cta-form-row {
+        flex-direction: column;
+    }
+
+    .third-body::before {
+        margin-right: 2px;
+        width: 13px;
+        height: 13px;
+    }
+
+    .cta-check label,
+    .cta-blue p {
+        font-size: 0.87rem;
+    }
+
+    .cta-blue p {
+        text-align: center;
+    }
+
+    .cta-form-btn {
+        margin: 9px 0;
+    }
+
+    .footer-all {
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-icon {
+        margin: auto;
+    }
+
+    .footer-left {
+        gap: 10px;
+    }
 }
 
 
