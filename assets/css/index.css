@@ -860,6 +860,12 @@ body {
     display: flex;
 }
 
+.recta-3p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .third-body::before {
     content: "";
     display: inline-block;
@@ -948,9 +954,12 @@ body {
 
 .footer-icon {
     display: flex;
+    gap: 10px;
+
+}
+
+.footer-icon img {
     width: 46px;
-    height: auto;
-    gap: 12px;
 }
 
 .footer-all {
@@ -961,7 +970,7 @@ body {
 .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .footer-left h3,
@@ -984,6 +993,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 20px;
 }
 
 .footer-all {
@@ -997,7 +1007,7 @@ body {
 }
 
 .footer-bottom {
-    width: 1700px;
+    width: 90%;
     margin: auto;
     justify-content: space-between;
     padding: 30px 0 50px;
@@ -1011,6 +1021,12 @@ body {
 .bold {
     font-weight: 600;
     color: #1F2C45;
+}
+.mo-hr{
+    display: none;
+}
+.pc-hr{
+    display: block;
 }
 
 /* ----------------미디어쿼리 ------------ */
@@ -1534,7 +1550,7 @@ body {
     .recta-3p {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -1569,6 +1585,10 @@ body {
         margin: 9px 0;
     }
 
+    .footer-left {
+        margin-top: 100px;
+    }
+
     .footer-all {
         flex-direction: column;
         margin: 0 auto;
@@ -1576,11 +1596,26 @@ body {
     }
 
     .footer-icon {
-        margin: auto;
+        margin: 0 auto 20px;
+        display: flex;
+
     }
 
-    .footer-left {
-        gap: 10px;
+    .footer-bottom {
+        width: 100%;
+        margin: auto;
+        padding: 10px 0 30px;
+    }
+
+    .personal {
+        font-size: 0.87rem;
+        gap: 18px;
+    }
+    .mo-hr{
+        display: block;
+    }
+    .pc-hr{
+        display: none;
     }
 }
 
