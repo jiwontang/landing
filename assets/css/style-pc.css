@@ -366,6 +366,7 @@
 
 .inspection-tit {
     margin-bottom: 36px;
+    text-align: center;
 }
 
 .inspection-text,
@@ -394,6 +395,7 @@
     margin-bottom: 106px;
     display: flex;
     justify-content: center;
+text-align: center;
 }
 
 .pro-top-text {
@@ -443,6 +445,7 @@
 
 .checkb-tit {
     margin: 106px 0;
+    text-align: center;
 }
 
 .checkb-bottom-text {
@@ -551,6 +554,7 @@
 
 .review-top-tit {
     margin-bottom: 106px;
+    text-align: center;
 }
 
 .review-card {
